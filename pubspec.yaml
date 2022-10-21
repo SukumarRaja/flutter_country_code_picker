@@ -1,9 +1,7 @@
 name: flutter_country_code_picker
 description: You can easily create phone code field.
 version: 0.0.1
-authors:
-  [ SysSoft<sukuappdev@gmail.com> ]
-homepage:
+homepage: https://github.com/SukumarRaja/flutter_country_code_picker.git
 
 environment:
   sdk: '>=2.18.1 <3.0.0'
