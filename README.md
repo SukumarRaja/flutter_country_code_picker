@@ -74,7 +74,7 @@ This example shows how to take full control over the picker by providing your ow
 
 ## images
 
-<img src=https://user-images.githubusercontent.com/99036793/204272531-f525a6cb-3183-4624-bc97-07e75bdb24ee.jpg width="0" height="300">
+<img src=https://user-images.githubusercontent.com/99036793/204272531-f525a6cb-3183-4624-bc97-07e75bdb24ee.jpg width=50% height=50%>
 
 ![Screenshot_2022-11-28-17-05-21-752_hashseven com customer](https://user-images.githubusercontent.com/99036793/204272538-79a97f6a-8c89-4273-a713-52f5040736ed.jpg)
 
