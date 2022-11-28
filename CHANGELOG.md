@@ -1,3 +1,3 @@
-## 0.0.1 - 2022-10-22
+## 0.0.1
 
-* TODO: Describe initial release.
+Readme files updated for package understanding
