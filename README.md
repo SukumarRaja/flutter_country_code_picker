@@ -28,15 +28,19 @@ TODO: Include short and useful examples for package users
 
 Column(
 children:[
-IntlPhoneField(
-maxLength: 10, controller: controller, initialCountryCode: "IN", validator: (data) { return null; },
-onChanged: (data){ print("number is $data");
-
-},
-),
-
-]
-)
+        IntlPhoneField(
+          maxLength: 10,
+          controller: controller,
+          initialCountryCode: "IN", 
+          validator: (data){
+            return null; 
+            },
+         onChanged: (data)
+         {
+         print("number is $data");
+         })
+        ]
+       )
 
 ## Additional information
 
