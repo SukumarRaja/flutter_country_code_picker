@@ -1,3 +1,5 @@
-## 0.1.1
+## 0.1.2
 
-Readme files updated for package understanding
+Country Choose Then flag not set issue fixed
+Provide option for change the font family , your choice
+hint text also easily changed
