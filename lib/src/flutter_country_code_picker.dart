@@ -122,6 +122,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
               borderRadius: BorderRadius.all(Radius.circular(15.0))),
           child: Container(
             padding: const EdgeInsets.all(10),
+            width: MediaQuery.of(this.context).size.width / 8,
             child: Column(
               children: <Widget>[
                 Row(
