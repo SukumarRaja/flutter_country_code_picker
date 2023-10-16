@@ -34,6 +34,8 @@ class IntlPhoneField extends StatefulWidget {
   final String? fontFamily;
   final Color? countryCodeTextColor;
   final Color? dropDownArrowColor;
+  final Color? backgroundColor;
+  final double modalSizePercent;
   final bool autofocus;
   final TextInputAction? textInputAction;
   final Function? onSubmit;
@@ -65,6 +67,8 @@ class IntlPhoneField extends StatefulWidget {
       this.keyboardAppearance = Brightness.light,
       this.searchText = 'Search by Country Name',
       this.countryCodeTextColor,
+      this.backgroundColor,
+      this.modalSizePercent = 100,
       this.dropDownArrowColor,
       this.autofocus = false,
       this.textInputAction,
@@ -120,6 +124,8 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
               borderRadius: BorderRadius.all(Radius.circular(15.0))),
           child: Container(
             padding: const EdgeInsets.all(10),
+            width: (MediaQuery.of(this.context).size.width / 100) *
+                widget.modalSizePercent,
             child: Column(
               children: <Widget>[
                 Row(
@@ -237,7 +243,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
         height: 48,
         width: MediaQuery.of(this.context).size.width,
         decoration: BoxDecoration(
-            color: Colors.white,
+            color: widget.backgroundColor ?? Colors.white,
             boxShadow: [
               BoxShadow(
                   color: Colors.grey.withOpacity(0),
