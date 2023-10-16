@@ -33,46 +33,49 @@ class IntlPhoneField extends StatefulWidget {
   final String hintText;
   final String? fontFamily;
   final Color? countryCodeTextColor;
+  final Color? backgroundColor;
   final Color? dropDownArrowColor;
   final bool autofocus;
   final TextInputAction? textInputAction;
   final Function? onSubmit;
 
-  const IntlPhoneField(
-      {super.key,
-      this.initialCountryCode,
-      this.obscureText = false,
-      this.textAlign = TextAlign.left,
-      this.onTap,
-      this.readOnly = false,
-      this.initialValue,
-      this.keyboardType,
-      this.autoValidate = true,
-      this.controller,
-      this.focusNode,
-      this.decoration,
-      this.style,
-      this.onSubmitted,
-      this.validator,
-      this.onChanged,
-      this.countries,
-      this.onCountryChanged,
-      this.onSaved,
-      this.showDropdownIcon = true,
-      this.dropdownDecoration = const BoxDecoration(),
-      this.inputFormatters,
-      this.enabled = true,
-      this.keyboardAppearance = Brightness.light,
-      this.searchText = 'Search by Country Name',
-      this.countryCodeTextColor,
-      this.dropDownArrowColor,
-      this.autofocus = false,
-      this.textInputAction,
-      this.maxLength,
-      this.onSubmit,
-      this.fontFamily,
-      required this.hintText,
-      this.onEditingComplete});
+  const IntlPhoneField({
+    super.key,
+    this.initialCountryCode,
+    this.obscureText = false,
+    this.textAlign = TextAlign.left,
+    this.onTap,
+    this.readOnly = false,
+    this.initialValue,
+    this.keyboardType,
+    this.autoValidate = true,
+    this.controller,
+    this.focusNode,
+    this.decoration,
+    this.style,
+    this.onSubmitted,
+    this.validator,
+    this.onChanged,
+    this.countries,
+    this.onCountryChanged,
+    this.onSaved,
+    this.showDropdownIcon = true,
+    this.dropdownDecoration = const BoxDecoration(),
+    this.inputFormatters,
+    this.enabled = true,
+    this.keyboardAppearance = Brightness.light,
+    this.searchText = 'Search by Country Name',
+    this.countryCodeTextColor,
+    this.dropDownArrowColor,
+    this.autofocus = false,
+    this.textInputAction,
+    this.maxLength,
+    this.onSubmit,
+    this.fontFamily,
+    required this.hintText,
+    this.onEditingComplete,
+    this.backgroundColor,
+  });
 
   @override
   State<IntlPhoneField> createState() => _IntlPhoneFieldState();
@@ -237,7 +240,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
         height: 48,
         width: MediaQuery.of(this.context).size.width,
         decoration: BoxDecoration(
-            color: Colors.white,
+            color: widget.backgroundColor ?? Colors.white,
             boxShadow: [
               BoxShadow(
                   color: Colors.grey.withOpacity(0),
