@@ -33,49 +33,48 @@ class IntlPhoneField extends StatefulWidget {
   final String hintText;
   final String? fontFamily;
   final Color? countryCodeTextColor;
-  final Color? backgroundColor;
   final Color? dropDownArrowColor;
+  final Color? backgroundColor;
   final bool autofocus;
   final TextInputAction? textInputAction;
   final Function? onSubmit;
 
-  const IntlPhoneField({
-    super.key,
-    this.initialCountryCode,
-    this.obscureText = false,
-    this.textAlign = TextAlign.left,
-    this.onTap,
-    this.readOnly = false,
-    this.initialValue,
-    this.keyboardType,
-    this.autoValidate = true,
-    this.controller,
-    this.focusNode,
-    this.decoration,
-    this.style,
-    this.onSubmitted,
-    this.validator,
-    this.onChanged,
-    this.countries,
-    this.onCountryChanged,
-    this.onSaved,
-    this.showDropdownIcon = true,
-    this.dropdownDecoration = const BoxDecoration(),
-    this.inputFormatters,
-    this.enabled = true,
-    this.keyboardAppearance = Brightness.light,
-    this.searchText = 'Search by Country Name',
-    this.countryCodeTextColor,
-    this.dropDownArrowColor,
-    this.autofocus = false,
-    this.textInputAction,
-    this.maxLength,
-    this.onSubmit,
-    this.fontFamily,
-    required this.hintText,
-    this.onEditingComplete,
-    this.backgroundColor,
-  });
+  const IntlPhoneField(
+      {super.key,
+      this.initialCountryCode,
+      this.obscureText = false,
+      this.textAlign = TextAlign.left,
+      this.onTap,
+      this.readOnly = false,
+      this.initialValue,
+      this.keyboardType,
+      this.autoValidate = true,
+      this.controller,
+      this.focusNode,
+      this.decoration,
+      this.style,
+      this.onSubmitted,
+      this.validator,
+      this.onChanged,
+      this.countries,
+      this.onCountryChanged,
+      this.onSaved,
+      this.showDropdownIcon = true,
+      this.dropdownDecoration = const BoxDecoration(),
+      this.inputFormatters,
+      this.enabled = true,
+      this.keyboardAppearance = Brightness.light,
+      this.searchText = 'Search by Country Name',
+      this.countryCodeTextColor,
+      this.backgroundColor,
+      this.dropDownArrowColor,
+      this.autofocus = false,
+      this.textInputAction,
+      this.maxLength,
+      this.onSubmit,
+      this.fontFamily,
+      required this.hintText,
+      this.onEditingComplete});
 
   @override
   State<IntlPhoneField> createState() => _IntlPhoneFieldState();
